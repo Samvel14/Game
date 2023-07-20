@@ -2,13 +2,14 @@ let seconds = 30;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
 function gelElement(id) {
-   return document.getElementById(id)
+    return document.getElementById(id)
 }
 
 function timer() {
     setTimeout(finish, seconds * 1000);
     gelElement("time").innerHTML = seconds;
     let countdown = setInterval(function () {
+        main();
         seconds--;
         gelElement("time").textContent = seconds;
         if (seconds <= 0) {
@@ -22,6 +23,17 @@ function timer() {
         }
     }, 1000);
 }
+function getRandomCountry() {
+    return conutiies[Math.floor(Math.random(countries.length - 1) * 10)]
+}
+
+function main() {
+    coun = getRandomCountry();
+    getElement("flag").src = coun.flag;
+}
+
+
+
 
 function check() {
     let input;
@@ -48,10 +60,7 @@ function finish() {
 let checkInerval = setInterval(check, 50);
 timer();
 
-
-
-
-
+}
 
 
 
