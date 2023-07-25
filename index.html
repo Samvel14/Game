@@ -13,42 +13,48 @@
 <body>
     <section class="card" id="card">
         <section class="infobar">
-            <div style="width:7%" class="score">Ճշգրտւթյուն:<span id="alertaccuracy"></span></div>
-
+            <div class="score">Միավոր: <span id="score">0</span></div>
+            <div class="time" id="time"></div>
         </section>
-        <section class="infobar">
-            <div class="score">Միավոր:<span id="score">0</span></div>
-            <div class="time" id="time">0</div>
-        </section>
-
-
         <div class="container">
             <section class="section">
-                <img src="./images/Helium.jpg" alt="flag" id="flag" class="flag">
+                <img src="" alt="flag" class="flag" id="flag">
             </section>
-
             <div class="border"></div>
-            <section class="senction" id="optionhalf">
+            <section class="section" id="optionhalf">
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" value="" name="option" id="option1input" class="optionradio">
+                        <label for="option1input" class="label" id="option1label"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="" name="option" id="option2input" class="optionradio">
+                        <label for="option2input" class="label" id="option2label"></label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="" name="option" id="option3input" class="optionradio">
+                        <label for="option3input" class="label" id="option3label"></label>
+                    </div>
 
-                <div class=options>
-                    <div class=option>
-                        <input type="radio" value="Լիթիում" name="option" id="option1input" class="optionradio">
-                        <label for="option2input" class="label" id="option1input">Լիթիում</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" value="ՆաԹրիում" name="option" id="option1input" class="optionradio">
-                        <label for="option2input" class="label" id="option1input">ՆաԹրիում</label>
-                    </div>
-                    <div class="option">
-                        <input type="radio" value="Հելիում" name="option" id="option1input" class="optionradio">
-                        <label for="option2input" class="label" id="option1input">Հելիում</label>
-                    </div>
                 </div>
             </section>
         </div>
     </section>
-    <script src='main.js'></script>>
-
+    <section id="alert" class="card">
+        <div class="alerttext">Միավոր: <span id="alertscore"></span></div>
+        <div class="alerttext">Ճշգրտություն: <span id="alertaccuracy"></span></div>
+        <br>
+        <button onclick="refresh()" class="button">Վերսկսել</button>
+    </section>
+    <script src='script.js'></script>
+    <script src='main.js'></script>
 </body>
 
 </html>
+
+
+
+
+
+
+
