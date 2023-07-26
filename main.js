@@ -1,5 +1,5 @@
 let correct;
-let seconds = 20;
+let seconds = 30;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
 function getElement(id) {

@@ -22,6 +22,9 @@ const countries = [
     {
         "flag": "./images/Natrium.jpg",
         "name": "Natrium"
+    },{
+    "flag": "./images/Feryum.jbg.png",
+    "name": "Feryum"
     },
 ]
 
